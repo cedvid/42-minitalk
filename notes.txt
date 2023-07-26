@@ -1,0 +1,56 @@
+NOTES:
+
+Instructions
+
+- exec names: client and server
+- Libft: yes
+- must be able to handle errors: no segfault, bus error, double free, etc
+- no memory leaks
+- one global variable allowed per program (server and client), use must be justified
+- allowed functions:
+◦ write
+◦ ft_printf and any equivalent YOU coded
+◦ signal: 
+◦ sigemptyset
+◦ sigaddset
+◦ sigaction
+◦ kill
+◦ getpid
+◦ malloc
+◦ free
+◦ pause
+◦ sleep
+◦ usleep
+◦ exit
+
+You must create a communication program in the form of a client and a server.
+
+• The server must be started first. After its launch, it has to print its PID.
+	
+	PID: number used by OS kernel to identify an active process.
+	May be used as parameter in function calls.
+	New process is create by fork() system call and PID is returned to the parent process.
+
+• The client takes two parameters:
+◦ The server PID.
+◦ The string to send.
+
+• The client must send the string passed as a parameter to the server.
+Once the string has been received, the server must print it.
+
+• The server has to display the string pretty quickly. Quickly means that if you think
+it takes too long, then it is probably too long.
+
+• Your server should be able to receive strings from several clients in a row without
+needing to restart.
+
+• The communication between your client and your server has to be done only using
+UNIX signals.
+
+	UNIX SIGNALS: standardized messages sent to a running program to trigger specific 
+	behavior (eg quit or error handling). 
+
+• You can only use these two signals: SIGUSR1 and SIGUSR2.
+	SIGUSR1 and SIGUSR2 are user-defined signals.
+
+
