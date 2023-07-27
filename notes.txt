@@ -8,20 +8,16 @@ Instructions
 - no memory leaks
 - one global variable allowed per program (server and client), use must be justified
 - allowed functions:
-◦ write
-◦ ft_printf and any equivalent YOU coded
-◦ signal: 
-◦ sigemptyset
-◦ sigaddset
-◦ sigaction
-◦ kill
-◦ getpid
-◦ malloc
-◦ free
-◦ pause
-◦ sleep
-◦ usleep
-◦ exit
+◦ signal: set a signal handler for a single signal type
+◦ sigemptyset: initializes empty signal set
+◦ sigaddset: adds a signal to a signal set
+◦ sigaction: examines/changes action taken by a process
+◦ kill: sends a signal to a specified process
+◦ getpid: gets the current process PID
+◦ pause: suspends the process until a signal interrupts it
+◦ sleep: suspends execution for seconds
+◦ usleep: suspends execution for microsecond intervals
+◦ exit: terminates the calling process
 
 You must create a communication program in the form of a client and a server.
 
