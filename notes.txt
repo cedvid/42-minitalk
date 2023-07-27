@@ -31,6 +31,9 @@ You must create a communication program in the form of a client and a server.
 	May be used as parameter in function calls.
 	New process is create by fork() system call and PID is returned to the parent process.
 
+	getpid() -> to get the PID
+
+
 • The client takes two parameters:
 ◦ The server PID.
 ◦ The string to send.
